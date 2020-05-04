@@ -1,0 +1,46 @@
+<template>
+<div class="page" data-name="pesel">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Pesel (program automatycznie dodaje poprawny PESEL do bazy danych)</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <form class="list" id="formularz">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Podaj PESEL</div>
+              <div class="item-input-wrap">
+                <input type="number" name="pesel" id="pesel" placeholder="PESEL">
+                <div id="wynik"></div>
+                <div id="wynik2"></div>
+                <div id="wynik3"></div>
+                <div id="guzik"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div id="wyswietl"></div>
+    <div class="block block-strong row" id="guziki">
+      <div class="col"><button class="button convert-form-to-data" id="sprawdz">Sprawdź poprawność</div>
+      <div class="col"><button class="button convert-form-to-data" id="pokaz">Wyświetl bazę</div>
+      <div class="col"><button class="button convert-form-to-data" id="czyszczenie">Sprawdź ponownie</div>
+    </div>
+  </div>
+</div>
+</template>
+<script src="http://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script>
+export default {};
+</script>
